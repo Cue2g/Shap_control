@@ -26,7 +26,7 @@ interface body {
 
 async function generateNewUser(): Promise<void> {
     try {
-        console.clear()git remote add origin git@github.com:Cue2g/Shap_control.git
+        console.clear()
         const client: string = readLine.question("Please enter the model: ").toLowerCase().trim();
         const ref = db.collection('frontEnd').doc('platform_profile-customers').collection('profile-customers').doc('quash_' + client);
         const doc = await ref.get();
